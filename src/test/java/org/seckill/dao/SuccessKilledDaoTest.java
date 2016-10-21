@@ -4,6 +4,7 @@ import javax.annotation.Resource;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.seckill.entity.SuccessKilled;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -22,6 +23,9 @@ public class SuccessKilledDaoTest {
 	
 	@Test
 	public void testQueryByIdWithSeckill() {
-		
+		long seckillId = 1000L;
+		SuccessKilled successKilled = successKilledDao.queryByIdWithSeckill(seckillId);
+		System.out.println(successKilled);
+		System.out.println(successKilled.getSeckill());
 	}
 }

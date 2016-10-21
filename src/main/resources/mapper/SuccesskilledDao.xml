@@ -19,7 +19,7 @@
  		select
  			sk.seckill_id,
  			sk.user_phone,
- 			sk.creat_time,
+ 			sk.create_time,
  			sk.state,
  			s.seckill_id "seckill.seckill_id",
  			s.name "seckill.name",
