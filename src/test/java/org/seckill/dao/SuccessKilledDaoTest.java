@@ -24,7 +24,8 @@ public class SuccessKilledDaoTest {
 	@Test
 	public void testQueryByIdWithSeckill() {
 		long seckillId = 1000L;
-		SuccessKilled successKilled = successKilledDao.queryByIdWithSeckill(seckillId);
+		long userPhone = 15725684546L;
+		SuccessKilled successKilled = successKilledDao.queryByIdWithSeckill(seckillId,userPhone);
 		System.out.println(successKilled);
 		System.out.println(successKilled.getSeckill());
 	}
