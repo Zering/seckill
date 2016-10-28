@@ -1,5 +1,5 @@
 DELIMITER $$
-CREATE PROCEDURE `seckill`.`execute_sekill` 
+CREATE PROCEDURE `seckill`.`execute_seckill` 
 	(in v_seckill_id bigint, in v_phone bigint,
 		in v_kill_time timestamp, out r_result int)
 	BEGIN
